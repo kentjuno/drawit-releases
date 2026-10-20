@@ -1,0 +1,30 @@
+# Mỗi lần đẩy apk/Drawit.apk mới lên main: tạo release v<version> (đọc từ dòng đầu apk/RELEASE.md)
+# và gắn file Drawit.apk. Link "latest/download/Drawit.apk" luôn trỏ tới bản mới nhất.
+name: Release APK
+on:
+  push:
+    branches: [main]
+    paths: ['apk/Drawit.apk', 'apk/RELEASE.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VER=$(head -1 apk/RELEASE.md | sed 's/^version:[[:space:]]*//')
+          TAG="v$VER"
+          tail -n +2 apk/RELEASE.md > notes.md
+          echo "" >> notes.md
+          echo "SHA-256: \`$(sha256sum apk/Drawit.apk | cut -d' ' -f1)\`" >> notes.md
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" apk/Drawit.apk --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" apk/Drawit.apk --title "Drawit $VER" --notes-file notes.md --latest
+          fi
