@@ -1,7 +1,10 @@
-version: 2.4.0
+version: 2.5.0
+
+**⚠ Quan trọng / Important**
+- Bản này đổi sang khoá ký chính thức. Phải GỠ bản cũ rồi mới cài được — gỡ app sẽ xoá bài vẽ, nên xuất file .drawit trước (Lưu → Xuất). — This version uses the new official signing key. Uninstall the old version first — uninstalling deletes your drawings, so export them as .drawit files first.
 
 **Mới / New**
-- App tự báo khi có bản mới, tải và cài đè chỉ với một chạm. — The app now tells you when a new version is out.
-- Cài đặt → Kiểm tra cập nhật để xem phiên bản và kiểm tra ngay. — Settings → Check for updates shows your version and checks right away.
+- Phần ủng hộ Drawit trong Cài đặt. — A small "Support Drawit" section in Settings.
+- Chuẩn bị lên Google Play. — Getting ready for Google Play.
 
-**Cài / Install:** tải `Drawit.apk` → mở file → cài đè lên bản cũ, bài vẽ vẫn còn. Download `Drawit.apk` → open → install over the old version; drawings are kept.
+**Cài / Install:** gỡ bản cũ → tải `Drawit.apk` → mở file → Cài đặt. Uninstall the old version → download `Drawit.apk` → open → Install.
