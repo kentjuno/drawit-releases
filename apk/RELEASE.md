@@ -1,9 +1,9 @@
-version: 2.5.0
-
-**⚠ Quan trọng / Important**
-- Bản này đổi sang khoá ký chính thức. Phải GỠ bản cũ rồi mới cài được — gỡ app sẽ xoá bài vẽ, nên xuất từng bài thành file .drawit trước (mở bài → nút tải về → File dự án .drawit). — This version uses the new official signing key. Uninstall the old version first — uninstalling deletes your drawings, so export them as .drawit files first.
+version: 2.6.0
 
 **Mới / New**
-- Chuẩn bị lên Google Play. — Getting ready for Google Play.
+- Cọ MyPaint thành bộ cọ chính, mặc định là Chì 2B — nét tự nhiên, ăn lực nhấn bút tốt. — MyPaint brushes are now the main set (default: 2B Pencil) with natural, pressure-sensitive strokes.
+- Chỉnh sâu cọ MyPaint (độ to / độ đậm theo lực, độ cứng mép, rải hạt, đầu cọ…) và lưu thành cọ riêng. — Deep MyPaint brush settings (pressure size / opacity, hardness, scatter, tip…) and save them as your own brushes.
+- Nút tẩy nhanh cạnh nút cọ: bấm để tẩy, bấm lại để quay về cọ vừa dùng. — Quick eraser button: tap to erase, tap again to return to your last tool.
+- Sửa lỗi nét MyPaint bị lẫn cọ khác khi vẽ ngay lúc mới mở bài. — Fixed MyPaint strokes mixing with other brushes right after opening a drawing.
 
-**Cài / Install:** gỡ bản cũ → tải `Drawit.apk` → mở file → Cài đặt. Uninstall the old version → download `Drawit.apk` → open → Install.
+**Cài / Install:** tải `Drawit.apk` → mở file → cài đè lên bản 2.5.0. (Từ bản 2.4.0 trở về trước: gỡ bản cũ trước, nhớ xuất .drawit.) Download `Drawit.apk` → install over 2.5.0. (From 2.4.0 or older: uninstall first, export your drawings as .drawit.)
